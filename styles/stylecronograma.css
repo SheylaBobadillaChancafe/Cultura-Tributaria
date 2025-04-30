@@ -1,0 +1,109 @@
+body {
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cronograma-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 5% 10%;
+    gap: 30px;
+}
+
+.titulo-cronograma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transform: translateY(0);
+    animation: fadeInUpText 2s;
+}
+
+.titulo-cronograma p {
+    font-size: 1.4rem;
+    font-family: var(--fuente-roboto);
+    color: var(--color-principal);
+    font-weight: bold;
+    text-align: center;
+}
+
+.titulo-cronograma img {
+    width: 40px;
+}
+
+.titulo-predial,
+.titulo-arbitrios {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    transform: translateY(0);
+    animation: fadeInUpText 2s;
+}
+
+.titulo-predial p,
+.titulo-arbitrios p {
+    font-family: var(--fuente-roboto);
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--color-azulsecundario);
+    color: var(--color-blanco);
+    padding: 20px 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cronograma-arbitrios,
+.cronograma-predial {
+    width: 450px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.cronograma-predial img {
+    width: 450px;
+    align-items: center;
+}
+
+.cronograma-arbitrios img {
+    width: 420px;
+    align-items: center;
+}
+
+
+@media (max-width: 460px) {
+    .cronograma-container1 {
+        padding-bottom: 15%;
+    }
+
+    .titulo-cronograma p {
+        text-align: start;
+    }
+
+    .cronograma-arbitrios,
+    .cronograma-predial {
+        width: 350px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .cronograma-predial img {
+        width: 350px;
+        align-items: center;
+    }
+
+    .cronograma-arbitrios img {
+        width: 320px;
+        align-items: center;
+    }
+}

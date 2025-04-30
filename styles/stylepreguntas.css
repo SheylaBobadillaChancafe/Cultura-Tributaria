@@ -1,0 +1,102 @@
+.preguntas-container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    gap: 50px;
+}
+
+
+.titulo-preguntas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.titulo-preguntas img {
+    width: 50px;
+
+}
+
+.titulo-preguntas p {
+    font-size: 1.2rem;
+    font-family: var(--fuente-roboto);
+    font-weight: bold;
+    color: var(--color-principal);
+    transform: translateY(0);
+    animation: fadeInUpText 2s;
+}
+
+.faq-item {
+    width: 80%;
+}
+
+.question {
+    background-color: #E0E0E0;
+    padding: 15px 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.pregunta {
+    font-size: 1.1rem;
+    font-family: var(--fuente-roboto);
+    font-weight: 500;
+    color: var(--color-negro);
+}
+
+.answer {
+    display: none;
+    background-color: #f4f2f2;
+    padding: 10px 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.answer p {
+    font-size: 1.1rem;
+    font-family: var(--fuente-roboto);
+    color: var(--color-negro);
+    line-height: 25px;
+}
+
+/* Flecha que rota */
+.arrow {
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 800px) {
+
+
+    .preguntas-container1 {
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+
+    .titulo-preguntas {
+        text-align: center;
+    }
+
+    .faq-item {
+        width: 100%;
+    }
+
+}

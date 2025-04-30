@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREGUNTAS FRECUENTES</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/stylepreguntas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logos">
+            <div class="logo-muni">
+                <img src="../img/LogoMuni.png" alt="Cultura Tributaria">
+                <h2><span class="text-muni">Municipalidad Provincial de Lambayeque</span></h2>
+            </div>
+            <div class="logos-importantes">
+                <img src="../img/libro.png" alt="Libro de Reclamaciones">
+                <img src="../img/portal.png" alt="Portal de Transparencia">
+                <img src="../img/goppe.png" alt="Plataforma Gob.pe">
+            </div>
+        </div>
+        <div class="header">
+            <div class="logo">
+                <img src="../img/CT.png" alt="Cultura Tributaria">
+                <h1><span class="text-cultura">CULTURA</span> <span class="text-tributaria">TRIBUTARIA</span></h1>
+            </div>
+
+            <nav class="nav">
+                <!-- Icono de menú hamburguesa solo se mostrará en pantallas pequeñas -->
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="submenu" id="tributos">
+                        <a href="#" class="submenu-link">Tributos <i class="arrow fas fa-chevron-down"></i></a>
+                        <ul class="submenu-items">
+                            <li><a href="informacion-tributaria.html">Información Tributaria</a></li>
+                            <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu" id="pagos">
+                        <a href="#" class="submenu-link">Pagos <i class="arrow fas fa-chevron-down"></i></a>
+                        <ul class="submenu-items">
+                            <li><a href="formas-pago.html">Formas y lugares de pago</a></li>
+                            <li><a href="plazos-cronogramas.html">Plazos y cronogramas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="administracion-tributaria.html">Administración Tributaria</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="preguntas-container1">
+
+            <div class="titulo-preguntas">
+                <p>¡AQUÍ RESOLVEMOS TUS DUDAS!</p>
+                <img src="../img/pregunta.png" alt="Icono de Pregunta">
+            </div>
+
+
+            <div class="faq-item" id="pregunta1">
+                <div class="question" onclick="toggleAnswer('pregunta1')">
+                    <span class="pregunta">1. ¿Porque es importante pagar los tributos?</span>
+                    <span class="arrow" id="arrow1">▼</span>
+                </div>
+                <div class="answer" id="answer1" style="display: none;">
+                    <p>El pago de tributos en una municipalidad es importante porque permite
+                        financiar servicios locales esenciales, como el mantenimiento de vías públicas,
+                        limpieza, seguridad ciudadana, y la mejora de espacios públicos. Además, los ingresos
+                        por tributos permiten a la municipalidad realizar obras de infraestructura y promover
+                        el desarrollo local. El cumplimiento de estas obligaciones garantiza el funcionamiento
+                        eficiente de los servicios municipales y contribuye al bienestar y calidad de vida de los
+                        ciudadanos.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="pregunta2">
+                <div class="question" onclick="toggleAnswer('pregunta2')">
+                    <span class="pregunta">2. ¿Quién paga el Impuesto Predial?</span>
+                    <span class="arrow" id="arrow2">▼</span>
+                </div>
+                <div class="answer" id="answer2" style="display: none;">
+                    <p>Los contribuyentes del impuesto predial son los propietarios de los
+                        predios al 1° de enero de cada año. Si se transfiere un predio,
+                        el comprador asume la responsabilidad a partir del 1° de enero del año siguiente.
+                        En caso de condóminos, deben informar su porcentaje de propiedad, pero la Municipalidad
+                        puede exigir el pago total. Si no se puede determinar el propietario, los poseedores del
+                        predio serán responsables del pago.</p>
+                </div>
+            </div>
+
+
+            <div class="faq-item" id="pregunta3">
+                <div class="question" onclick="toggleAnswer('pregunta3')">
+                    <span class="pregunta">3. ¿Cuáles son los beneficios tributarios aplicables al Impuesto
+                        Predial?</span>
+                    <span class="arrow" id="arrow3">▼</span>
+                </div>
+                <div class="answer" id="answer3" style="display: none;">
+                    <p>Los beneficios tributarios aplicables al Impuesto Predial incluyen descuentos por pago puntual,
+                        exoneraciones
+                        o rebajas para ciertos tipos de propiedades, como las de uso público o social, y la posibilidad
+                        de fraccionar
+                        la deuda en caso de dificultades económicas. Estos beneficios varían según la normativa de cada
+                        municipio.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="pregunta4">
+                <div class="question" onclick="toggleAnswer('pregunta4')">
+                    <span class="pregunta">4. ¿Cuál es el plazo para declara un predio?</span>
+                    <span class="arrow" id="arrow4">▼</span>
+                </div>
+                <div class="answer" id="answer4" style="display: none;">
+                    <p>El nuevo propietario de un predio debe declararlo hasta el último día hábil de febrero del año
+                        siguiente
+                        a la adquisición. Si no lo hace, incurre en una infracción y recibe una multa. Se recomienda
+                        presentar
+                        la declaración antes del último día hábil del mes siguiente a la transferencia para evitar
+                        sanciones.
+                        El pago de arbitrios se debe realizar al mes siguiente de la transferencia.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="pregunta5">
+                <div class="question" onclick="toggleAnswer('pregunta5')">
+                    <span class="pregunta">5. ¿Dónde puedo declarar y pagar el impuesto?</span>
+                    <span class="arrow" id="arrow5">▼</span>
+                </div>
+                <div class="answer" id="answer5" style="display: none;">
+                    <p>En la Municipalidad Provincial de Lambayeque. Av. Bolivar N° 400.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="pregunta6">
+                <div class="question" onclick="toggleAnswer('pregunta6')">
+                    <span class="pregunta">6. ¿Quienes se encuentran inafectos al Impuesto Predial?</span>
+                    <span class="arrow" id="arrow6">▼</span>
+                </div>
+                <div class="answer" id="answer6" style="display: none;">
+                    <p>Están inafectos al Impuesto Predial:
+                        Los bienes de uso público, tales como parques, plazas, hospitales y centros educativos públicos.
+                        Los bienes de la Iglesia, destinados al culto religioso.
+                        Las propiedades del Estado, utilizadas para fines públicos y no comerciales.
+                        Las propiedades agrícolas, en ciertas zonas rurales, conforme a la normativa municipal vigente.
+                        Estas inafectaciones pueden variar de acuerdo con las disposiciones locales de cada municipio.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="pregunta7">
+                <div class="question" onclick="toggleAnswer('pregunta7')">
+                    <span class="pregunta">7. ¿Puedo fraccionar mi deuda de predial y arbitrios?</span>
+                    <span class="arrow" id="arrow7">▼</span>
+                </div>
+                <div class="answer" id="answer7" style="display: none;">
+                    <p>Sí, es posible fraccionar la deuda del Impuesto Predial y los arbitrios. El fraccionamiento
+                        permite pagar el monto total en varias cuotas, de acuerdo con las condiciones establecidas por
+                        cada
+                        municipalidad. Sin embargo, el solicitante debe cumplir con ciertos requisitos y formalizar la
+                        solicitud
+                        ante la municipalidad correspondiente, que establecerá los plazos y las tasas de interés
+                        aplicables.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="footer-logo">
+                <p>Lambayeque ciudad evocadora, benemérica y generosa</p>
+                <img src="../img/LogoMuni.png" alt="Municipalidad de Provincial de Lambayeque">
+                <p><span>Capital del turismo</span></p>
+            </div>
+
+            <div class="footer-enlaces">
+                <p class="enlaces-principal">ENLACES DIRECTOS</p>
+                <p>Libro de reclamaciones</p>
+                <p>Mesa de partes virtual</p>
+                <p>Sistema de trámite</p>
+                <p>Seguimiento de tu trámite</p>
+                <p>Portal de transparencia</p>
+            </div>
+
+            <div class="footer-redes">
+                <p class="redes-principal">SIGUENOS</p>
+                <p>gob.pe/munilambayeque</p>
+            </div>
+        </section>
+        <div class="footer-copyright">
+            <p>&copy; 2023 Municipalidad Provincial de Lambayeque - Derechos Reservados</p>
+            <P>Ubicanos en: Av. Bolivar N° 400</P>
+        </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+
+</body>
+
+</html>
